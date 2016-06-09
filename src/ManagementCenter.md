@@ -10,7 +10,7 @@ You have two options for installing Hazelcast Management Center. You can either 
 
 Here are the steps:
 
--	Download the latest Hazelcast ZIP from [hazelcast.org](http://www.hazelcast.org/download/). The ZIP contains the `mancenter`-*version*`.war` file. 
+-	Download the latest Hazelcast ZIP from [hazelcast.org](http://www.hazelcast.org/download/). The ZIP contains the `mancenter`-*version*`.war` file.
 -	You can directly start `mancenter`-*version*`.war` file from the command line. The following command will start Hazelcast Management Center on port 8080 with context root 'mancenter' (`http://localhost:8080/mancenter`).
 
 ```java
@@ -346,23 +346,7 @@ You can use the alerts feature of this tool to receive alerts by creating filter
 
 Once you click the **Alerts** button located on the toolbar, the page shown below appears.
 
-![](images/Alerts-Home.jpg)
-
-**Creating Filters for Cluster**
-
-Select the **Cluster Alerts** check box to create a cluster wise filter. Once selected, the next screen asks for the items for which alerts will be created, as shown below.
-
-![](images/ClusterAlert1.jpg)
-
-Select the desired items and click the **Next** button. On the next page (shown below), specify the frequency of checks in **hour** and **min** fields, give a name for the filter, select whether notification e-mails will be sent (to no one, only admin or to all users) and select whether the alert data will be written to the disk (if checked, you can see the alert log at the folder */users/<your user>/mancenter<version>*).
-
-![](images/ClusterAlert2.jpg)
-
-Click on the **Save** button; your filter will be saved and put into the **Filters** part of the page, as shown below.
-
-![](images/ClusterAlert3.jpg)
-
-To edit the filter, click on the ![](images/EditIcon.jpg) icon. To delete the filter, click on the ![](images/DeleteIcon.jpg) icon.
+![](images/Alerts-Home.png)
 
 **Creating Filters for Cluster Members**
 
@@ -432,7 +416,7 @@ The historical data collected with Time Travel feature are stored in a file data
 
 Time travel data files are created monthly. Their file name format is `[group-name]-[year][month].db` and
  `[group-name]-[year][month].lg`. Time travel data is kept in the `*.db` files. The files with the extension `lg` are temporary files created internally and you do not have to worry about them.
- 
+
 Management Center has no automatic way of removing or archiving old time travel data files. They remain in the aforementioned folder until you delete or archive them.
 
 
@@ -455,7 +439,7 @@ To see the documentation, click on the **Documentation** button located at the t
 | Mancenter Heap Size | # of Maps | # of Queues | # of Topics |
 | -------- | --------- | ---------- | ------------ |
 | 256m | 50 | 30 | 30 |
-| 1024m | 2k | 1k | 1k | 
+| 1024m | 2k | 1k | 1k |
 
 **For 20 Nodes**
 
